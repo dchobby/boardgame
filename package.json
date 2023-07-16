@@ -1,0 +1,29 @@
+{
+  "name": "boardgame",
+  "version": "1.0.0",
+  "description": "A board game implemented in three.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+	"build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dchobby/boardgame.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dchobby/boardgame/issues"
+  },
+  "homepage": "https://github.com/dchobby/boardgame#readme",
+  "dependencies": {
+    "three": "^0.154.0",
+    "websocket": "^1.0.34"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
