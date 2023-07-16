@@ -1,4 +1,11 @@
 import * as THREE from 'three';
+import {World} from './World.js';
+
+var world=null;
+
+var lastUpdateTime = 0;
+var fps=60;
+
 function Animate() {
     setTimeout(() => {
         requestAnimationFrame( Animate );
@@ -12,6 +19,14 @@ function Animate() {
     }
 }
 
+function onWindowResize() {
+    if(world != undefined){
+      world.camera.aspect = window.innerWidth / window.innerHeight;
+      world.camera.updateProjectionMatrix();
+      world.renderer.setSize( window.innerWidth, window.innerHeight );  
+    }
+  }
+  
 function InitScene()
 {
     world = new World();
